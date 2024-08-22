@@ -3,9 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+      h1,h6{
+        color:chocolate
+      } 
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
+<div class="container-fluid p-5">
+    <img src="https://yt3.ggpht.com/AQ55DvSyKVrxMHm8IVP3AVG8IN56dbJFUPno7mqaRTsQ1SUDyvJo7YyH9hNJI-i26KejdIoOncl3zXY=s1600-c-fcrop64=1,000001f8ffffc6e4-nd-v1-rwa" width="400px" height="400px" />
+    
+       <h6>What is JIRA Software?</h6> 
+<p>
+JIRA is a software development tool used for project management and issue tracking. It is a popular tool among software development teams to plan, track, and release software projects. JIRA provides a centralized platform for managing tasks, bugs, and other types of issues and it helps teams to organize and prioritize their work. The tool integrates with other software development tools and has a variety of customizable features and workflows that allow teams to adapt it to their specific needs. Additionally, JIRA also provides various reporting and dashboard features that help teams stay on top of their work and make data-driven decisions.
+JIRA supports multiple languages including English, French, etc. It is a platform-independent tool. A 30-day free trial version is available on JIRA. 
+</p>
+<h1>Feedback</h1>
+<p>Code review is undoubtedly one of the most effective methods for providing feedback to a developer. It involves analyzing their code, how they write it, and offering constructive criticism to highlight areas for correction or improvement. For example, adapting the code to follow a logic for better performance.</p>
+
+<h1>What are user stories in Jira?</h1>
+<p>
+    
+    Summary: A user story is an informal, general explanation of a software feature written from the perspective of the end user. Its purpose is to articulate how a software feature will provide value to the customer. It's tempting to think that user stories are, simply put, software system requirements.</p>
+
+<h6>What is Jenkins?</h6>
+<p>
+Jenkins is a tool that is used for automation. It is mainly an open-source server that allows all the developers to build, test and deploy software. It is written in Java and runs on java only. By using Jenkins we can make a continuous integration of projects(jobs) or end-to-endpoint automation</p>
+
+<h6>Why Organizations use Jenkins?</h6>
+<p>Jenkins facilitates the automation of several stages of the software development lifecycle, including application development, testing, and deployment. Operating within servlet containers like Apache Tomcat, the technology is server-based.Continuous delivery (CD) and integration (CI) pipelines can be created and managed with Jenkins. The development, testing, and deployment of software applications are automated using CI/CD pipelines. You will be able to release software more regularly and with fewer problems if you do this.
+
+jenkins is flexible.
+You can add the n no.of plugins you want to add to the jenkins.
+You can automate the proceses of CI/CD pipelines of all the projects.</p>
+<h6>What is Jenkins CI/CD Pipeline?</h6>
+<p>Jenkins CI/CD stands for Continuous Integration / Continuous Deployment first let us try to understand what is a pipeline. In computing, a pipeline is a set of stages or processes linked together to form a processing system. Each stage in the pipeline takes an input, processes it in accordance with a set of rules, and then sends the outputs to the stage that follows. Frequently, the pipeline’s overall output is its final step’s output. like the procedures outlined below</p>
+
+Test code
+Build Application
+Push Repository
+Deploy to Server
+<p>All the steps mentioned above will perform in sequence one after the other if any step/stage get failed it will not move forward to another step/stage until the previous step got a success</p>
+
+<h6>What is Jenkins Continuous Integration (CI)?</h6>
+<p>Jenkins Continuous integration means whenever new code is committed to remote repositories like GitHub, GitLab, etc. Continuous Integration (CI) will continuously build, tested, and merged into a shared repository.
+
+Benefits of Continuous Integration (CI)
+We can maintain the reports of the projects
+Deployments can be made within the given time
+Bugs can be found quickly.</p>
+<h6>What is Jenkins Continuous Deployment/Delivery (CD)?</h6>
+<p>Continuous Deployment
+Continuous Deployment means automating the further stages of the pipeline automatically or manually deploying the application/code to different environments like Dev, Test, and Production. Automating the build is the main component of Continuous Integration and Continuous Deployment.
+
+Continuous Delivery
+Each and every build that passed all automated tests and was able to be fully automated and delivered into production only required one click of human intervention is called Continuous Delivery.</p>
+
+<h6>What Is Jenkins Freestyle Project?</h6>
+<p>Jenkins freestyle project is an configuration and options based project which will allows you to build,test, and deploy the application with automation by selecting the required configuration based on the requirement following are the some of the available in the freestyle project.</p>
+
+Building and testing code
+Packaging applications
+Deploying applications to production servers
+Running reports
+<h6>What is Jenkins Pipeline?</h6>
+<p>DevOps professionals mostly work with pipelines because pipelines can automate the processes like building, testing, and deploying the application. Doing manually by UI takes lots of time and effort which will affect productivity. With the help of Continuous Integration / Continuous Deployment (CI/CD) Pipeline scripts we can automate the whole process which will increase productivity and save lots of time for the organization and can deliver quality applications to the end users.To know more about how to build the CI/CD pipeline please refer to the How to Make a CI-CD Pipeline in Jenkins?.</p>
+<h6>What is Jenkins Multi Configuration Projects?</h6>
+<p>You can run different builds of the same project with different 
+configurations when you create a Jenkins Multi-Configuration Project (MCP).</p>
+
+<h6>Installation of Jenkins in windows:</h6>
+<p>Before installing Jenkins you should have already installed java on your device as above said it works on java, so it’s important to install and for that, you should install version jdk8. You can find the download it from the link provided. Make sure while downloading JDK8, choose a favorable option based on your OS (like windows X 64 bit), and then install the JDK8.
+After installing java check it by using command prompt by java -version and this will show whether you have it or not.
+Now, go to the official website of Jenkins i.e. www.jenkins.io. Here you will have two options one is an LTS release and one is a weekly release. Download Jenkins for windows from the LTS section(recommended).
+After download, open that zip(compressed) file, and by right click and choose the all extract option extract the file. We are doing extraction to unzip the compressed file.
+After extracting, you can see a new folder of Jenkins. Open it and install Jenkins. After installing, it will automatically take you to the browser where localhost::8080 is running. 8080 is the by default port of Jenkins. And if the browser automatically doesn’t open then simply search localhost::8080.
+After this, you will see the dashboard or interface of Jenkins. If you are installing it the first time then it will show you some plugins which are recommended to install. And then, you are ready to use Jenkins.</p>
+<h1>Jfrog Artifactory what is used for ?</h1>
+
+<p>Artifactory is a binary repository manager for use by build tools (like Maven and Gradle), dependency management tools (like Ivy, NuGet and RubyGems) and build servers (like Jenkins, TeamCity and Bamboo). It comes as downloadable version (OSS, Pro and Enterprise with additional features) and cloud SaaS version.
+
+    Simply put it's a self-hosted/on-premise remote location in which you can store Java/Maven dependencies (with the open source version) and various other package types (NPM, rubygems etc) with the pro version</p>
+
+
+<h5> 2=>JFrog Artifactory is the industry standard for universal binary repository managers, and the heart of the JFrog DevOps Platform. Artifactory provides end-to-end automation and management of binaries and artifacts throughout the application delivery process.
+
+    Artifactory is available as a fully managed service on the cloud provider of your choice (AWS, Google Cloud Platform, or Azure), through SaaS plans sized for every level of organization from small business to global enterprise. With this flexibility, Artifactory can enable your single-cloud, multicloud, or hybrid strategy.
+    
+    Improves productivity across your development pipeline
+    Ecosystem freedom with support for all major Cl/CD platforms and DevOps tools you already use
+    Supports 25+ packages such as Conan, Debian, Docker, Go, Helm, Maven, npm, NuGet, and PyPI
+    Kubernetes ready supporting containers, Docker, Helm Charts, and is your Kubernetes and Docker registry
+    Full CLI and REST APls customizable to your ecosystem</h5>
+<h1>What is Docker and why is it used?</h1>
+ <p>
+    
+    Docker overview | Docker Docs
+    Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications.</p>
+
+<h1> What is cloud in simple words?</h1>
+<p>
+   
+    What is the cloud? The cloud is an extensive network of remote servers around the world. These servers store and manage data, run applications, and deliver content and services like streaming videos, web mail, and office productivity software over the internet.</p>
+
+
+
+<h1>What is a dev environment in Docker?</h1>
+<p>
+    
+    Dev Environments let you create a configurable developer environment with all the code and tools you need to quickly get up and running. It uses tools built into code editors that allows Docker to access code mounted into a container rather than on your local host.</p>
+
+<h1>
+    What is the deployment feature?</h1>
+   <p> The deployments feature provides a timeline view of your deployment information in Jira when you
+     connect a deployment tool like Bitbucket, GitHub, GitLab, Jenkins, Azure DevOps, or any other 
+     supported tool.</p>
+<h1>What is a QA environment?</h1>
+<p>What is a QA environment?
+    
+   
+
+   The QA or Quality Assurance environments are Athento environments in which tests are performed to ensure that the software complies with minimum quality requirements in terms of:
+   
+   Security
+   Performance and availability
+   Quality of developments and customizations
+   These minimum requirements will be defined by market standards, as well as by the characteristics of Athento's plan, or the professional services contracted by the client. 
+   
+   Most of these tests are automated using off-the-shelf tools, but manual tests are also performed by our technical team, customer's testing team or partner.
+   
+   All of Athento's quality assurance configurations that are tested in QA will be subsequently moved to a production environment, in some cases first passing through UAT environments.
+   
+   For QA tests related to new features, customizations or parameterizations of Athento, our team will provide test cases in Testrail format.
+   
+   Other important information:</p>
+
+<h1>What is QA Environment?</h1>
+<p>
+    A QA environment, also known as a test environment, is a test setup consisting of firmware, software, hardware, and the relevant network configuration. All tests are run on this test bed, containing all the infrastructure needed to conduct tests.
+    
+    The goal of the test environment is to resemble the production environment closely. It helps in identifying any errors during the tests. A test bed is a component of a test environment that is specially designed in accordance with the requirements of a certain application. The majority of testing is done right on the testbed. It represents a combination of test data as well as the test environments.
+    
+    💡 According to a panel of CIOs and a few senior technology professionals, In 2019, quality assurance and testing accounted for, on average, about 23% of the annual IT budget for each firm. (Source)</p>
+    
+   <h1>What the Use of a QA Environment?</h1> 
+    <p> environment stands as the exact replica of the production environment sans the users. So, it acts
+         as the last line of defense between your application and the bugs which usually accompany the new changes.
+          Most of the testing takes place in the QA environment, and it is used by testers to perform functional and non-functional 
+          testing to ensure that all the production-like features are working well.For instance, Regression testing takes place in the QA environment,
+           where it checks the existing features do not break due to the addition of new ones. But the most beneficial part of the QA environment is that it 
+           allows QA analysts to explore and verify if all the client requirements are met or not. Thereafter, the code is moved to pre-production and then the production environment.</p>
+    
+   <ul> Types of QA/Test Environment
+    The following are some of the most conventional and fundamental QA or testing environments in a typical organizational setup:
+    
+   <li> Development Environment</li>
+   <li>Production Environment</li> 
+   <li>Staging Environment</li> 
+   <li>UAT Environment</li> </ul>
+    
+    
+   
+   
+   
+    
+
+<h1> What Is A UAT Environment?</h1>
+<p>
+    
+    The UAT environment is almost (if not completely) aligned with the production environment, so any issues can be identified before the application is deployed to production. Performance testing may also be done in this environment, or one that mirrors it, which is sometimes called a staging environment.</p>
+
+<h1>UAT Testing</h1>
+<p>User Acceptance Testing (UAT), which is performed on most UIT projects, sometimes called beta testing or end-user testing, is a phase of software development in which the software is tested in the "real world" by the intended audience or business representative.</p>
+
+<h1>Regrassin testing</h1>
+<p>Regression Testing is a type of testing in the software development cycle that runs after every change to ensure that the change introduces no unintended breaks. Regression testing addresses a common issue that developers face — the emergence of old bugs with the introduction of new changes.</p>
+
+<h1>Perfomance testing</h1>
+<p>Performance testing is the practice of evaluating how a system performs in terms of responsiveness and stability under a particular workload. Performance tests are typically executed to examine speed, robustness, reliability, and application size.</p>
+
+<h1>What is Software Testing?</h1>
+<p>
+    Last Updated : 25 Jul, 2024
+    Software testing is an important process in the software development lifecycle . It involves verifying and validating that a software application is free of bugs, meets the technical requirements set by its design and development , and satisfies user requirements efficiently and effectively.
+    
+    This process ensures that the application can handle all exceptional and boundary cases, providing a robust and reliable user experience. By systematically identifying and fixing issues, software testing helps deliver high-quality software that performs as expected in various scenarios.
+    
+    Table of Content
+    
+  <h1>  What is Software Testing?</h1>
+   <p> Different Types Of Software Testing
+    Different Types of Software Testing Techniques
+    Different Levels of Software Testing
+    Best Practices for Software Testing
+    Benefits of Software Testing</p>
+    <h1> Where are Jenkins builds stored?</h1>
+    <p>
+       
+        The JENKINS_HOME directory is the root of the directory structure on disk that Jenkins uses to perform builds and keep archives. The Jenkins home directory is listed in Manage Jenkins > System under the Home directory heading. On Windows by default, this is set to C:\ProgramData\Jenkins\.</p>
+        <h6>Git Commit</h6>
+        <p>
+            Since we have finished our work, we are ready move from stage to commit for our repo.
+            
+            Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
+            
+            When we commit, we should always include a message.
+            
+            By adding clear messages to each commit, it is easy for yourself (and others) to see what has changed and when.</p>
+    <h6> What is deploy in software?</h6>
+    <p>
+       
+        Software deployment is the process of making software available to be used on a system by users and other programs. You might deploy software to create a backup copy of the software, to move the software to another system, or to create another SMP/E-serviceable copy for installing service or other products.</p>
+</div>
 </body>
 </html>
